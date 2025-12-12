@@ -1,4 +1,4 @@
-# 🃏 Pasjans Klondike (C# Console) – Projekt konkursowy Gigathon
+# Pasjans Klondike (C# Console) – Projekt konkursowy Gigathon🃏
 
 Konsolowa implementacja klasycznego **Pasjansa Klondike** napisana w języku **C#**.  
 Projekt powstał na potrzeby konkursu **Gigathon**, skupiając się na logice gry, poprawności zasad, obsłudze wejścia użytkownika i estetycznym wyświetlaniu kart w konsoli (również w kolorze).
