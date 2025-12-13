@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Pasjans\Pasjans\bin\Debug\Pasjans.exe.config
+C:\Users\User\source\repos\Pasjans\Pasjans\bin\Debug\Pasjans.exe
+C:\Users\User\source\repos\Pasjans\Pasjans\bin\Debug\Pasjans.pdb
+C:\Users\User\source\repos\Pasjans\Pasjans\obj\Debug\Pasjans.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Pasjans\Pasjans\obj\Debug\Pasjans.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Pasjans\Pasjans\obj\Debug\Pasjans.exe
+C:\Users\User\source\repos\Pasjans\Pasjans\obj\Debug\Pasjans.pdb

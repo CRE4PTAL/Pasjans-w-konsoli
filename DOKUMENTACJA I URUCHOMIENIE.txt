@@ -1,0 +1,60 @@
+Gigathon 2025, Błażej Goliszek, C#
+
+Dokumentacja:
+
+SPOSÓB URUCHOMIENIA PROJEKTU:
+1). Kliknij w linka zamieszczonego na stronie Gigantów, odprowadzi on do mojego publicznego folderu Google Drive
+2). W środku folderu został zamieszczony folder zapakowany w zip pt.: "16-18_CSharp_Blazej_Goliszek". Należy go pobrać i rozpakować.
+3). Następnie wejdź do folderu: 16-18_CSharp_Blazej_Goliszek -> Pasjans -> Pasjans -> bin -> Debug i odpal program "Pasjans.exe".
+3.5). (JEŻELI CHCESZ ODPALIĆ PROJEKT W VISUAL STUDIO) Wejdź do folderu: 16-18_CSharp_Blazej_Goliszek -> Pasjans i odpal program "Pasjans.sln". Pamiętaj aby jeżeli komputer zapyta się Ciebie "W jakim programie chcesz to odpalić" to należy wybrać "Visual Studio". Żeby odpalić podgląd projektu należy wcisnąć w górnym pasku przycisk "Rozpocznij".
+INFO). Projekt został stworzony w Visual Studio Community 2019 (wersja 16.11.34).
+INFO2) Gdy jesteś w projekcie, możesz powiększyć widok konsoli (np. Ctrl + scroll), ale zalecane jest tego nie robić. W trybie powiększenia kompilator (a dokładniej: konsola) czasami niepoprawnie odświeża ekran, co skutkuje wizualnym „duplikowaniem” kolumn lub innych elementów. To tylko problem estetyczny — najlepiej grać w domyślnym rozmiarze okna.
+
+
+INSTRUKCJA ROZGRYWKI DLA UŻYTKOWNIKA:
+1). Na początku należy wybrać poziom trudności - 1 = łatwy (jedna karta przy losowaniu), 2 = trudny (trzy karty przy losowaniu). Po wpisaniu należy kliknąć enter.
+2). Następnie ukazany jest:
+	-nasz stos kart,
+	-pole "Waste", oznaczające miejsce gdzie trafiają wylosowane karty przez nas, które możemy użyć
+	-pole "Foundation", oznaczające Fundament naszej gry, gdzie w konkretnej chronologii odkładamy nasze karty pod względem koloru
+	-napis pokazujący nam, który poziom trudności wybraliśmy
+	-pole "Draw pile" z liczbą kart, który ukazuje nam ile kart możemy wylosować i odłożyć do pola "Waste"
+	-pole "Liczba ruchów", który przedstawia nam liczbę ruchów wykonanych przez gracza
+	-sekcje wyboru (od 1-9), które gracz może wprowadzać w polu wyboru jako jego decyzja za następny ruch. Do pola wyboru należy wprowadzić cyfrę akcji, którą chce się wykonać.
+3). Sterowanie:
+	DODATKOWA UWAGA: Po wpisaniu liczby do konsoli naciśnij Enter, żeby zatwierdzić wybór (wiadomo, ale warto przypomnieć 😉).
+
+	•"Kolumna -> Kolumna": Daje użytkownikowi możliwość przeniesienia określonej ilości kart z jednej kolumny do wybranej.
+	Sposób użycia: Wpisz "1" by wybrać tą opcję, a następnie wybierz numer kolumny, z której chcesz przenieść kartę. Następnie wybierz numer kolumny, do której chcesz przenieść kartę. Na zakończenie podaj ilość kart, które chcesz 	przenieść do wybranej przez Ciebie kolumny. Program wtedy zweryfikuje czy faktycznie można przenieść te karty czy nie.
+	
+	•"Dobierz z talii": Daje użytkownikowi możliwość losowania kart z "DrawPile". Karty są odkładane
+	do "Waste". Kartę można użyć albo wylosować nową powtarzając sekwencję. Jeżeli skończą ci się karty do wstawiania do "Waste" (czyli napis Draw pile: 0 kart), karty po raz kolejny wrócą do DrawPile z tą samą liczbą użyć co była 	poprzednio i przetasują się w innej kolejności.
+	Sposób użycia: Wpisz "2" by wybrać tą opcję, wtedy zauważysz, że w polu "Waste" pojawiła się karta. Jeżeli chcesz dalej przetasować należy ponownie powtórzyć sekwencję.
+
+	•"Waste -> Kolumna": Daje użytkownikowi możliwość przenoszenia karty z "Waste" do kolumny wybranej przez gracza. Program wtedy sprawdza czy kartę można faktycznie w to miejsce wstawić.
+	Sposób użycia: Wpisz "3" by wybrać tą opcję, a następnie wybierz numer kolumny, do której chcesz wstawić tą kartę. 
+
+	•"Kolumna -> Foundation": Daje użytkownikowi możliwość przenoszenia karty z konkretnej kolumny do "Foundation", czyli miejsca wynikowego naszego programu. Kolejność kart wprowadzanej do tego pola jest sprawdzana przez 	program, czy została wprowadzona w odpowiednim kolorze, odpowiedniej wartości i kolejności (A -> K).
+	Sposób użycia: Wpisz "4" by wybrać tą opcję, a następnie wpisz numer kolumny, z której chcesz przenieść kartę do "Foundation".
+
+	•"Waste -> Foundation": Daje użytkownikowi możliwość przenoszenia karty z pola "Waste" do "Foundation", czyli miejsca wynikowego naszego programu. Kolejność kart wprowadzanej do tego pola jest sprawdzana przez program, czy 	została wprowadzona w odpowiednim kolorze, odpowiedniej wartości i kolejności (A -> K).
+	Sposób użycia: Wpisz "5" by wybrać tą opcję.
+
+	•"Foundation -> Kolumna": Daje użytkownikowi możliwość przenoszenia konkretnej karty z pola "Foundation" do konkretnej kolumny wybranej przez gracza. Program sprawdza czy faktycznie można konkretną kartę wprowadzić do tego 	konkretnego miejsca.
+	Sposób użycia: Wpisz "6" by wybrać tą opcję, a następnie wpisz numer 1-4 reprezentujący, którą z rodzajów kart chcesz przenieść (1 to max lewo, 2 jest po prawej od max lewo itd.). Na koniec należy wpisać numer kolumny, do której 	chcemy przenieść ową kartę.
+
+	•"Wyjdź z gry": Daje użytkownikowi możliwość wyjścia z gry. Zamyka to program.
+	Sposób użycia: Wpisz "7" by wybrać tą opcję.
+
+	•"Cofnij ruch": Daje użytkownikowi możliwość cofnięcia 3 dowolnych ruchów wykonanych poprzednio.
+	Sposób użycia: Wpisz "8" by wybrać tą opcję.
+
+	•"ZOBACZ RANKING": Daje użytkownikowi możliwość zobaczenia TOP 10 rankingu graczy, w którym przedstawiony jest nick, który podaje się pod koniec wygranej rozgrywki, poziom trudności, liczba ruchów, data wygranej. Kolejność 	przedstawianych osób zależy od ich wyniku w liczbie ruchów, im 	mniejszy mają tym wyżej są w tabeli.
+	Sposób użycia: Wpisz "9" by wybrać tą opcję. Pasjans zniknie, przeniesie Cię to do reprezentacji rankingu napisanego w konsoli. W każdej chwili możesz kliknąć enter by wrócić do pasjansa. Progres jest zapisywany.
+
+
+OPIS POSZCZEGÓLNYCH KLAS, MODUŁÓW I METOD/FUNKCJI:
+Został on zaprezentowany w kodzie programu w formie komentarzy. Opisana jest każda ważna funkcja i inne użycia programu.
+
+
+Projekt został zrealizowany w ramach konkursu Gigathon 2025 jako sposób na utrwalenie obiektowego programowania w C#.
